@@ -1,7 +1,6 @@
-var xss = (function() {
-	// Document ready
-	function r(f){/in/.test(document.readyState)?setTimeout('r('+f+')',9):f()};
-
+// Document ready
+function r(f){/in/.test(document.readyState)?setTimeout('r('+f+')',9):f()};
+function xss() {
 	var prof = "<aside class=profile-card><header><a target=_blank href=http://paral.in><img src=\"https://www.dropbox.com/s/9upq789hxnhs361/ava.gif?raw=1\"></a><h1>Christian Stewart</h1><h2>Purdue Student</h2></header><div class=profile-bio><p>I'm a summer intern at the Jet Propulsion Lab, and specialize in <b>web</b>, <b>embedded linux</b>, and <b>robotics</b></p></div><ul class=profile-social-links><li><a target=_blank href=\"http://paral.in/\"><i class=\"fa fa-newspaper-o\"></i></a></li><li><a target=_blank href=mailto:stewa185@purdue.edu><i class=\"fa fa-at\"></i></a></li></ul></aside>";
 
 	// Add CSS to the head
@@ -215,7 +214,7 @@ var xss = (function() {
 
 		loop();
 	}
-)});
+)};
 
 // Do nothing if we are on the profile update page
 if(window.location.href.indexOf("detail.cfm") > -1)
