@@ -20,7 +20,7 @@ var prof = "<aside class=profile-card><header><a target=_blank href=http://paral
 	var bod  = document.getElementsByTagName('body')[0];
 	
 	// Set the content of the page
-	bod.innerHTML = "<canvas id=c style=\"position:fixed;top:0;margin:0 auto;left:0;right:0;z-index:-3;\"></canvas>"+prof;
+	bod.innerHTML = "<canvas id=c></canvas>"+prof;
 }
 	
 r(function()
