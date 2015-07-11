@@ -1,5 +1,5 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,500);
-@import url(http://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css);
+@import url(//fonts.googleapis.com/css?family=Roboto:400,500);
+@import url(//fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css);
 *, *:before, *:after {
   box-sizing: border-box;
   -webkit-transition: all cubic-bezier(0.37, 0.15, 0.54, 1.99) 0.5s;
