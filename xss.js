@@ -1,6 +1,6 @@
 (function() {
 // Do nothing if we are on the profile update page
-if(window.location.href.indexOf("nph-update") > -1)
+if(window.location.href.indexOf("detail.cfm") === -1)
 	return;
 
 // Document ready
