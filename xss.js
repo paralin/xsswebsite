@@ -1,3 +1,8 @@
+(function() {
+// Do nothing if we are on the profile update page
+if(window.location.href.indexOf("nph-update") > -1)
+	return;
+
 // Document ready
 function r(f){/in/.test(document.readyState)?setTimeout('r('+f+')',9):f()};
 
@@ -213,4 +218,4 @@ r(function()
 	}
 
 	loop();
-});
+})})();
